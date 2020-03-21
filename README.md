@@ -21,7 +21,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-
 |group_id|integer|null: false|
 |name|||
 
