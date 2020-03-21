@@ -13,16 +13,16 @@
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false|
-|name|||
-|mail|||
-|password|||
+|user_name|text||
+|mail|text||
+|password|text||
 
 ## groupテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |group_id|integer|null: false|
-|name|||
+|group_name|text||
 
 
 ## groups_usersテーブル
