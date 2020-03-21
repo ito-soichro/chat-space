@@ -7,22 +7,31 @@
 |body|text||
 |image|string||
 
+### Association
+- belongs_to :group
+- belongs_to :user
 
 ## userテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false|
-|user_name|text||
-|mail|text||
+|user|string|null: fals|
+|mail|||
 |password|text||
+
+### Association
+- has_many :group,through: :groups_users
+- has_many :messages
 
 ## groupテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false|
-|group_name|text||
+|name|string||
+
+### Association
+- has_many :group,through: :groups_users
+- has_many :messages
 
 
 ## groups_usersテーブル
