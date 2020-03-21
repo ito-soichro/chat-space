@@ -15,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user|string|null: fals|
+|name|string|null: false|
 |mail|||
 |password|text||
 
@@ -27,7 +27,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string||
+|name|string|null: false|
 
 ### Association
 - has_many :group,through: :groups_users
