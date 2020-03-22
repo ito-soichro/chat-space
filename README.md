@@ -16,7 +16,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, index: true|
-|mail|||
+|mail|text||
 |password|text||
 
 ### Association
@@ -40,8 +40,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user | integer | null: false, foreign_key: true|
-|group | integer | null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
