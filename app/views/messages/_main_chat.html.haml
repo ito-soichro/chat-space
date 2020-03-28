@@ -1,0 +1,43 @@
+.main_chat
+  .main_chat__group
+    .main_chat__group__name
+      %h2.main_chat__group__name__member
+        test
+      %ul.main_chat__group__name__user-name
+        %li.main_chat__group__name__user-name__list
+        Member : masa
+    
+    .main_chat__group__edit-btn
+      = link_to"#" do
+        Edit
+ 
+ 
+  .main_chat__message
+    .main_chat__message__position1
+      .main_chat__message__position1__user1
+        .main_chat__message__position1__user1__name  
+          masa
+        .main_chat__message__position1__user1__date  
+          2019/11/20(web)17:43:01
+      .main_chat__message__position1__text1
+        おはよう！
+    
+    .main_chat__message__position2
+      .main_chat__message__position2__user2  
+        .main_chat__message__position2__user2__name  
+          masa
+        .main_chat__message__position2__user2__date  
+          2019/11/20(web)17:43:34
+      .main_chat__message__position2__text2 
+        今日は夜から雨
+  
+  .main_chat__form
+    .main_chat__form__message
+      .main_chat__form__message__input-box
+        %input.main_chat__form__message__input-box__input-text{:name => "text", :placeholder => "type a message", :type => "text", :value => ""}/
+        %label{class: "main_chat__form__message__input-box__input-text__image"}
+          = icon('fas', 'image')
+          %input{type: :file, class: "main_chat__form__message__input-box__input-text__image__file"}
+      .main_chat__form__message__input-box__send-box
+        Send 
+
