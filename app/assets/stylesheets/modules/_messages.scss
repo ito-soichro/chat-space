@@ -90,7 +90,7 @@
     }
   }
  
-  &__message{
+  .main_chat__message{
     height: calc(100vh - 190px);
     padding: 46px 40px;
     background-color: #fafafa;
@@ -116,66 +116,47 @@
         margin-bottom: 10px;
       }
     }
-    &__position2{
-        padding-bottom: 40px;
-      &__user2{
-        display: flex;
-        margin-bottom: 10px;
-        &__name{
-          font-size: 16px;
-          color: #333333;
-        }
-        &__date{
-          color: #999999;
-          font-size: 12px;
-          margin-left: 10px;
-        }
-      }
-      &__text2{
-        font-size: 14px;
-        color: #434343;
-        margin-bottom: 10px;
-      }
-    }
   
   }
   &__form{
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    &__message{
-    display: flex;
-      &__input-box{
-        position: relative;
+    .new_message{
+      display: flex;
+      .main_chat__form__message{
         width: 100%;
-        &__input-text{
-          height: 50px;
-          width: 100%;
-          padding: 0 40px 0 10px;
-          color: #434a54;
-          border-style: none;
-          &__image{
-            font-size: 1.3rem;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            &__file{
-              display: none;
+        height: 50px;
+        padding: 0 40px 0 10px;
+        color: #434a54;
+        border-style: none;
+      }
+      .main_chat__form__message__input-box{
+        position: relative;
+        .main_chat__form__message__input-box__input-text__image{
+          position: absolute;
+          font-size: 1.3rem;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+           .main_chat__form__message__input-box__input-text__image__file{
+             display: none;
             }
           }
         }
-        &__send-box{
-          width: 100px;
-          height: 50px;
-          line-height: 50px;
-          padding: 0 30px;
-          margin-left: 15px;
-          background-color: #38aef0;
-          color: white;
-          cursor: pointer;
+        
+      
+      .main_chat__form__message__input-box__send-box{//ok
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+        display: flex;
         }
-      }
     }
   }
 }
