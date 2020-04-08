@@ -55,6 +55,10 @@ $(function(){
       $('.main_chat__message').append(html);
       $('.main_chat__message').animate({ scrollTop: $('.main_chat__message')[0].scrollHeight});
       $('form')[0].reset();
+      $('.main_chat__form__message__input-box__send-box').removeAttr('disabled');
     })
+    .fail(function() {
+     alert("メッセージ送信に失敗しました");
+    });
   });
 });
