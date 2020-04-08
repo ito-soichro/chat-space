@@ -50,5 +50,11 @@ $(function(){
       processData: false,
       contentType: false
     })
+    .done(function(data){
+      var html = buildHTML(data);
+      $('.main_chat__message').append(html);
+      $('.main_chat__message').animate({ scrollTop: $('.main_chat__message')[0].scrollHeight});
+      $('form')[0].reset();
+    })
   });
 });
