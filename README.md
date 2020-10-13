@@ -1,5 +1,13 @@
 
-## holle world
+## 前書き
+グループ別でメッセージのやりとりができる、チャットアプリを作成しました。
+URL:http://18.180.205.35/users/sign_in
+
+## ログイン情報
+- e-mail
+ttttt@gmail.com
+- パスワード
+11111111
 
 ## messagesテーブル
 
